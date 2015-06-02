@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <title>Formular</title>
+   <link rel="stylesheet" href="bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <div class="container">
+      <div class="panel panel-default">
+
+         <div class="panel-heading">
+            <h3 class="panel-title">Neuen Artikel eintragen</h3>
+         </div>
+
+         <div class="panel-body">
+
+            <div class="alert alert-success">
+               <strong>Erfolgreich eingetragen.</strong> Nur weiter so!
+            </div>
+
+            <form role="form" action="index.php" method="POST">
+               <input class="form-control" type="text" name="name" placeholder="Produktname">
+               <input class="form-control" type="url" name="url" placeholder="Artikel-URL">
+               <input class="form-control" type="url" name="image" placeholder="Artikel-Bild">
+               <div class="row">
+                  <div class="col-xs-6 input-group">
+                     <input type="number" class="form-control" name="price" placeholder="Preis">
+                     <span class="input-group-addon">€</span>
+                  </div>
+                  <div class="col-xs-6">
+                     <button type="submit" class="btn btn-primary btn-block">Anlegen</button>
+                  </div>
+               </div>
+            </form>
+
+         </div> <!-- / .panel-body -->
+      </div> <!-- / .panel -->
+
+      <div class="row list-group products">
+
+         <div class="item col-xs-4">
+            <div class="thumbnail">
+               <a href="#artikelurl">
+                  <img src="http://lorempixel.com/291/182/city/" alt="Produktbild">
+               </a>
+               <div class="buttons-edit">
+                  <a class="btn btn-default btn-sm" href="edit.php?id=1">Edit</a>
+                  <a class="btn btn-default btn-sm" href="delete.php?id=1">Delete</a>
+               </div>
+               <div class="caption">
+                  <h4><a href="#artikelurl">Städtereise</a></h4>
+                  <span class="lead">6.371€</span>
+               </div>
+            </div>
+         </div>
+
+         <div class="item col-xs-4">
+            <div class="thumbnail">
+               <a href="#artikelurl">
+                  <img src="http://lorempixel.com/291/182/abstract/" alt="Produktbild">
+               </a>
+               <div class="buttons-edit">
+                  <a class="btn btn-default btn-sm" href="edit.php?id=2">Edit</a>
+                  <a class="btn btn-default btn-sm" href="delete.php?id=2">Delete</a>
+               </div>
+               <div class="caption">
+                  <h4><a href="#artikelurl">Kunstwerk</a></h4>
+                  <span class="lead">142,4 Mio. €</span>
+               </div>
+            </div>
+         </div>
+
+         <div class="item col-xs-4">
+            <div class="thumbnail">
+               <a href="#artikelurl">
+                  <img src="http://lorempixel.com/291/182/fashion/" alt="Produktbild">
+               </a>
+               <div class="buttons-edit">
+                  <a class="btn btn-default btn-sm" href="edit.php?id=3">Edit</a>
+                  <a class="btn btn-default btn-sm" href="delete.php?id=3">Delete</a>
+               </div>
+               <div class="caption">
+                  <h4><a href="#artikelurl">Modestück</a></h4>
+                  <span class="lead">39,90€</span>
+               </div>
+            </div>
+         </div>
+
+         <div class="item col-xs-4">
+            <div class="thumbnail">
+               <a href="#artikelurl">
+                  <img src="http://lorempixel.com/291/182/technics" alt="Produktbild">
+               </a>
+               <div class="buttons-edit">
+                  <a class="btn btn-default btn-sm" href="edit.php?id=4">Edit</a>
+                  <a class="btn btn-default btn-sm" href="delete.php?id=4">Delete</a>
+               </div>
+               <div class="caption">
+                  <h4><a href="#artikelurl">Gadget</a></h4>
+                  <span class="lead">13,37€</span>
+               </div>
+            </div>
+         </div>
+
+         <div class="item col-xs-4">
+            <div class="thumbnail">
+               <a href="#artikelurl">
+                  <img src="http://lorempixel.com/291/182/sports" alt="Produktbild">
+               </a>
+               <div class="buttons-edit">
+                  <a class="btn btn-default btn-sm" href="edit.php?id=5">Edit</a>
+                  <a class="btn btn-default btn-sm" href="delete.php?id=5">Delete</a>
+               </div>
+               <div class="caption">
+                  <h4><a href="#artikelurl">Sportgerät</a></h4>
+                  <span class="lead">9,78€</span>
+               </div>
+            </div>
+         </div>
+
+         <div class="item col-xs-4">
+            <div class="thumbnail">
+               <a href="#artikelurl">
+                  <img src="http://lorempixel.com/291/182/food" alt="Produktbild">
+               </a>
+               <div class="buttons-edit">
+                  <a class="btn btn-default btn-sm" href="edit.php?id=6">Edit</a>
+                  <a class="btn btn-default btn-sm" href="delete.php?id=6">Delete</a>
+               </div>
+               <div class="caption">
+                  <h4><a href="#artikelurl">Nahrungsmittel</a></h4>
+                  <span class="lead">3,14€</span>
+               </div>
+            </div>
+         </div>
+
+      </div> <!-- / .products -->
+   </div> <!-- / .container -->
+
+</body>
+
+</html>
